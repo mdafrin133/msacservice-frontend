@@ -7,7 +7,7 @@ import {
 
 const OWNER_EMAIL = 'msacservice00@gmail.com';
 const OWNER_PHONE = '+919989309424';
-const BACKEND_URL = 'http://localhost:5000';
+const BACKEND_URL = 'https://msacservice-backend.onrender.com';
 
 const INITIAL_SERVICES = [
   { 
