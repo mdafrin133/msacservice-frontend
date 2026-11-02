@@ -499,7 +499,7 @@ function BookingTab({ preselectedService, onBookingCreated }) {
       }
     } catch (err) {
       setGeoStatus('');
-      alert('Could not connect to backend server at http://localhost:5000. Please ensure your Express backend is running.');
+      alert('Could not connect to the MSacservice backend. Please try again later.');
     } finally {
       setIsSubmitting(false);
     }
@@ -749,7 +749,7 @@ function OwnerDashboardTab({ bookings, setBookings, complaints, setIsLoggedIn, i
       if (data.success) setStep(2);
       else setErrorMsg(data.error || 'Request failed.');
     } catch (err) {
-      setErrorMsg('Could not connect to backend server at http://localhost:5000.');
+   setErrorMsg('Could not connect to the MSacservice backend.');
     } finally {
       setIsLoading(false);
     }
